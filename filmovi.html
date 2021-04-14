@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/ikona.png" type="image/icon type">
+    <title>Filmovi</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">A&M kino</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+            <span id="burgerMeni"><i class="fas fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Početna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link aktivno" href="filmovi.html">Filmovi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mx4d.html">MX4D</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galerija.html">Galerija</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Budite u toku!
+            </span>
+            <ul class="navbar-nav justify-content-end mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="https://facebook.com" target="_blank"><i class="fab fa-2x fa-facebook-square"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+          <div class="row">
+            <h2 class="text-light naslov mt-5">Na repertoaru</h2><hr class="bg-light">
+            <div class="col-4 text-center">
+                <button class="dugme pritisnuto" type="button" id="dugme1">Ponedeljak</button>
+            </div>
+            <div class="col-4 text-center">
+                <button class="dugme" type="button" id="dugme2">Sre/Čet/Pet</button>
+            </div>
+            <div class="col-4 text-center">
+                <button class="dugme" type="button" id="dugme3">Subota/Nedelja</button>
+            </div>
+          </div>
+          <div class="mt-5 repertoar" id="pon">
+            <div class="card mb-5">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/dusa.jpg" alt="duša slika" class="slike">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Duša (sinhronizovano) <small class="text-warning">Soul</small><span class="badge bg-warning text-dark float-end">Cena: 390 rsd</span></h5>
+                    <p class="card-text">
+                      animirani, porodični, avantura | 107 min                      
+                    </p>
+                    <button type="button" class="float-start dugme mb-2" data-bs-toggle="collapse" data-bs-target="#dusaVI1">Kratak sadržaj</button>
+                    <div class="collapse text-warning float-start kratakSadrzaj mt-2" id="dusaVI1">
+                      Da li ste se ikada zapitali gde nastaju vaše emocije, snovi, vaša interesovanja? Šta je to što vas čini onim što jeste?
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-5" >
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/nomataras.jpg" alt="pogrešan korak" class="slike">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Pogrešan korak <small class="text-warning">No matarás</small><span class="badge bg-warning text-dark float-end">Cena: 320 rsd</span></h5>
+                    <p class="card-text">
+                      triler | 92 min                      
+                    </p>
+                    <button type="button" class="float-start dugme mb-2" data-bs-toggle="collapse" data-bs-target="#pogVI1">Kratak sadržaj</button>
+                    <div class="collapse text-warning float-start kratakSadrzaj mt-2" id="pogVI1">
+                      Dani je pristojan mladić, koji se zadnjih nekoliko godina posvetio brizi o svom bolesnom ocu. Nakon njegove smrti, Dani odluči da je vreme da se vrati svom životu.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-5" >
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/nevidljivcovek.jpg" alt="nevidljiv čovek" class="slike">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Nevidljiv čovek <small class="text-warning">The Invisible Man</small><span class="badge bg-warning text-dark float-end">Cena: 280 rsd</span></h5>
+                    <p class="card-text">
+                      triler, horor | 125 min                   
+                    </p>
+                    <button type="button" class="float-start dugme mb-2" data-bs-toggle="collapse" data-bs-target="#nevVI1">Kratak sadržaj</button>
+                    <div class="collapse text-warning float-start kratakSadrzaj mt-2" id="nevVI1">
+                      Dobitnica nagrade Emi, Elizabet Mos, u glavnoj je ulozi u zastrašujućoj modernoj priči inspirisanoj klasičnim monstruoznim likom.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-5" >
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/tomidzeri.jpg" alt="tom i džeri" class="slike">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Tom i Džeri <small class="text-warning">Tom and Jerry</small><span class="badge bg-warning text-dark float-end">Cena: 230 rsd</span></h5>
+                    <p class="card-text">
+                      animirani, avantura, komedija | 101 min                 
+                    </p>
+                    <button type="button" class="float-start dugme mb-2" data-bs-toggle="collapse" data-bs-target="#tomVI">Kratak sadržaj</button>
+                    <div class="collapse text-warning float-start kratakSadrzaj mt-2" id="tomVI">
+                      Jedno od najomiljenijih rivalstava u istoriji ponovo oživljava kad se Džeri useli u najlepši hotel u Njujorku uoči "venčanja veka", prisiljavajući očajnog organizatora venčanja da hitno zatraži nužne mere.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5 sakrij repertoar" id="scp">
+            <div class="card mb-5" >
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/nevidljivcovek.jpg" alt="nevidljiv čovek" class="slike">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Nevidljiv čovek <small class="text-warning">The Invisible Man</small><span class="badge bg-warning text-dark float-end">Cena: 210 rsd<small> *akcija</small></span></h5>
+                    <p class="text-warning small">(akcijska cena samo sredom)</p>
+                    <p class="card-text">
+                      triler, horor | 125 min                   
+                    </p>
+                    <button type="button" class="float-start dugme mb-2" data-bs-toggle="collapse" data-bs-target="#nevVI">Kratak sadržaj</button>
+                    <div class="collapse text-warning float-start kratakSadrzaj mt-2" id="nevVI">
+                      Dobitnica nagrade Emi, Elizabet Mos, u glavnoj je ulozi u zastrašujućoj modernoj priči inspirisanoj klasičnim monstruoznim likom.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-5" >
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/possessor.jpg" alt="posednik" class="slike">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Posednik <small class="text-warning">Possessor</small><span class="badge bg-warning text-dark float-end">Cena: 290 rsd</span></h5>
+                    <p class="card-text">
+                      horor, naučna-fantastika, triler | 103 min                     
+                    </p>
+                    <button type="button" class="float-start dugme mb-2" data-bs-toggle="collapse" data-bs-target="#posednikVI">Kratak sadržaj</button>
+                    <div class="collapse text-warning float-start kratakSadrzaj mt-2" id="posednikVI">
+                      Tasja Vos radi kao korporativni agent, gde koristi tehnologiju implantacije mozga kako bi ovladala i upravljala telom drugog čoveka, a potom ga naterala da izvrši ubistvo koja njena kompanija želi.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-5">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/dusa.jpg" alt="duša slika" class="slike">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Duša (sinhronizovano) <small class="text-warning">Soul</small><span class="badge bg-warning text-dark float-end">Cena: 350 rsd<small> *akcija</small></span></h5>
+                    <p class="text-warning small">(akcijska cena samo sredom)</p>
+                    <p class="card-text">
+                      animirani, porodični, avantura | 107 min                      
+                    </p>
+                    <button type="button" class="float-start dugme mb-2" data-bs-toggle="collapse" data-bs-target="#dusaVI">Kratak sadržaj</button>
+                    <div class="collapse text-warning float-start kratakSadrzaj mt-2" id="dusaVI">
+                      Da li ste se ikada zapitali gde nastaju vaše emocije, snovi, vaša interesovanja? Šta je to što vas čini onim što jeste?
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-5" >
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/aperfectenemy.jpg" alt="savršen neprijatelj" class="slike">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Savršen neprijatelj <small class="text-warning">A Perfect Enemy</small><span class="badge bg-warning text-dark float-end">Cena: 310 rsd</span></h5>
+                    <p class="card-text">
+                      akcija, avantura, krimi | 89 min                    
+                    </p>
+                    <button type="button" class="float-start dugme mb-2" data-bs-toggle="collapse" data-bs-target="#savnepVI">Kratak sadržaj</button>
+                    <div class="collapse text-warning float-start kratakSadrzaj mt-2" id="savnepVI">
+                      Psihološki triler o previše slučajnom susretu dvoje ljudi, koji na kraju otkriva jedan savršen zločin...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5 sakrij repertoar" id="sn">
+            <div class="card mb-5" >
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/nomataras.jpg" alt="pogrešan korak" class="slike">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Pogrešan korak <small class="text-warning">No matarás</small><span class="badge bg-warning text-dark float-end">Cena: 320 rsd</span></h5>
+                    <p class="card-text">
+                      triler | 92 min                      
+                    </p>
+                    <button type="button" class="float-start dugme mb-2" data-bs-toggle="collapse" data-bs-target="#pogVI">Kratak sadržaj</button>
+                    <div class="collapse text-warning float-start kratakSadrzaj mt-2" id="pogVI">
+                      Dani je pristojan mladić, koji se zadnjih nekoliko godina posvetio brizi o svom bolesnom ocu. Nakon njegove smrti, Dani odluči da je vreme da se vrati svom životu.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-5" >
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/alone.jpg" alt="izolovan" class="slike">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Izolovan <small class="text-warning">Alone</small><span class="badge bg-warning text-dark float-end">Cena: 360 rsd</span></h5>
+                    <p class="card-text">
+                      horor, triler | 92 min                     
+                    </p>
+                    <button type="button" class="float-start dugme mb-2" data-bs-toggle="collapse" data-bs-target="#alonVI">Kratak sadržaj</button>
+                    <div class="collapse text-warning float-start kratakSadrzaj mt-2" id="alonVI">
+                      Dok je ceo svet u potpunom haosu, pitanje je koliko će Ejden moći da izdrži u ovoj borbi za goli opstanak.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-5" >
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/godzila.jpg" alt="godzilla vs kong" class="slike">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Godzila protiv Konga <small class="text-warning">Godzilla vs. Kong</small><span class="badge bg-warning text-dark float-end">Cena: 390 rsd</span></h5>
+                    <p class="card-text">
+                      akcija, naučna-fantastika | 113 min                     
+                    </p>
+                    <button type="button" class="float-start dugme mb-2" data-bs-toggle="collapse" data-bs-target="#gvskVI">Kratak sadržaj</button>
+                    <div class="collapse text-warning float-start kratakSadrzaj mt-2" id="gvskVI">
+                      Sukob najvećih filmskih čudovišta, nezaustavljive Godzile i gigantskog King Konga, čeka se još od 1962. kad su se prvi put sreli na filmskom platnu.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-5" >
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/mortalkombat.jpg" alt="mortal kombat" class="slike">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Mortal Kombat <small class="text-warning">Mortal Kombat</small><span class="badge bg-warning text-dark float-end">Cena: 400 rsd</span></h5>
+                    <p class="card-text">
+                      fantazija, avantura, akcija | 110 min                    
+                    </p>
+                    <button type="button" class="float-start dugme mb-2" data-bs-toggle="collapse" data-bs-target="#kombatVI">Kratak sadržaj</button>
+                    <div class="collapse text-warning float-start kratakSadrzaj mt-2" id="kombatVI">
+                      MMA borac Kol Jang, koji je navikao da dobija batine za novac, nije svestan svog nasleđa – tačnije, zašto je car Autvorlda, Šang Cung poslao svog najboljeg ratnika, Sab Ziroa, u lov na njega.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <footer>
+            <ul>
+                <li><a href="index.html" class="fut-link">Početna</a></li>
+                <li><a href="filmovi.html" class="fut-link">Filmovi</a></li>
+                <li><a href="mx4d.html" class="fut-link">MX4D</a></li>
+                <li><a href="galerija.html" class="fut-link">Galerija</a></li>
+                <li><a href="kontakt.html" class="fut-link">Kontakt</a></li>
+            </ul>
+      </footer>     
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+          $("#dugme1").click(function(){
+            $("#pon").fadeIn();
+            $("#scp").hide();
+            $("#sn").hide();
+            $(this).addClass("pritisnuto");
+            $("#dugme2").removeClass("pritisnuto");
+            $("#dugme3").removeClass("pritisnuto");
+          });
+          $("#dugme2").click(function(){
+            $("#pon").hide();
+            $("#scp").fadeIn();
+            $("#sn").hide();
+            $(this).addClass("pritisnuto");
+            $("#dugme1").removeClass("pritisnuto");
+            $("#dugme3").removeClass("pritisnuto");
+          });
+          $("#dugme3").click(function(){
+            $("#pon").hide();
+            $("#scp").hide();
+            $("#sn").fadeIn();
+            $(this).addClass("pritisnuto");
+            $("#dugme1").removeClass("pritisnuto");
+            $("#dugme2").removeClass("pritisnuto");
+          });
+      </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

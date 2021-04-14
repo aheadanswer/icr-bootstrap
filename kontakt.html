@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/ikona.png" type="image/icon type">
+    <title>Kontakt</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">A&M kino</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+            <span id="burgerMeni"><i class="fas fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Početna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="filmovi.html">Filmovi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mx4d.html">MX4D</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galerija.html">Galerija</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link aktivno" href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Budite u toku!
+            </span>
+            <ul class="navbar-nav justify-content-end mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="https://facebook.com" target="_blank"><i class="fab fa-2x fa-facebook-square"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container kontakt">
+        <h2 class="text-light naslov mt-5">Kontakt</h2><hr class="bg-light">
+        <div class="card mt-5">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-9">
+                        Naš pozivni centar radi radnim danima do 20h. Nedeljom je radno vreme do 12h
+                    </div>
+                    <div class="col-md-3">
+                        <strong class="text-warning">Telefon: +381 677 096 916</strong>
+                    </div><hr>
+                    <div class="col-md-9">
+                        Za bilo kakva pitanja pišite na našu Email adresu, odgovaramo svakim danom do 20h
+                    </div>
+                    <div class="col-md-3">
+                        <strong class="text-warning">Email: aimkino@kino.rs</strong>
+                    </div><hr>
+                    <div class="col-md-12">
+                        Ostavite Vaše podatke i kontaktiraćemo Vas najduže u roku od 24h
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="mt-5" id="forma">
+            <div class="row">
+                <div class="formaElementi col-md-12">
+                    <label for="ime" class="form-label"><i class="far fa-user"></i> Ime</label>
+                    <span class="form-text text-warning float-end">
+                        <em>*Sva polja su obavezna</em>
+                    </span>
+                    <input type="text" class="form-control" id="ime" placeholder="Unesite ime...">
+                    <p class="text-danger mt-2" id="imeUnos"></p>
+                </div>
+                <div class="formaElementi col-md-12">
+                    <label for="prezime" class="form-label"><i class="fas fa-signature"></i> Prezime</label>
+                    <input type="text" class="form-control" id="prezime" placeholder="Unesite prezime...">
+                    <p class="text-danger mt-2" id="prezimeUnos"></p>
+                </div>
+                <div class="formaElementi col-md-7">
+                    <label for="emailAdresa" class="form-label"><i class="far fa-envelope"></i> Email adresa</label>
+                    <input type="email" class="form-control" id="emailAdresa" placeholder="Unesite Email...">
+                    <p class="text-danger mt-2" id="emailUnos"></p>
+                    <div class="text-warning mt-1">Vaši lični podaci ostaju sigurni kod nas.</div>
+                </div>
+                <div class="formaElementi col-md-5">
+                    <label for="brojTelefona" class="form-label"><i class="fas fa-mobile-alt"></i> Telefon</label>
+                    <input type="tel" class="form-control" id="brojTelefona" placeholder="Unesite telefon...">
+                    <p class="text-danger mt-2" id="telUnos"></p>
+                </div>
+            </div>
+            <button type="submit" class="dugme" id="posaljiDugme"><i class="far fa-paper-plane"></i> Pošalji</button>
+        </form>
+        <h2 class="text-light naslov mt-5">Mape lokacija</h2><hr class="bg-light">
+        <div class="row mb-5">
+            <div class="col-md-4 mt-5">
+                <h4 class="text-light naslov">SC Stadion</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.282021546897!2d20.48813201575342!3d44.7750554871811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a717e06352b9b%3A0x858fab5de3fa1631!2sStadion%20Shopping%20Center!5e0!3m2!1ssr!2srs!4v1618252430281!5m2!1ssr!2srs" class="mape" style="border:0;" loading="lazy"></iframe>
+            </div>
+            <div class="col-md-4 mt-5">
+                <h4 class="text-light naslov">TC Piramida</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.9613805233676!2d20.38488051575402!3d44.80197568540544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a6f772eafb28d%3A0xc0aca93201bc48ab!2sTc%20Piramida!5e0!3m2!1ssr!2srs!4v1618252735818!5m2!1ssr!2srs" class="mape" style="border:0;" loading="lazy"></iframe>
+            </div>
+            <div class="col-md-4 mt-5">
+                <h4 class="text-light naslov">Vojvode Stepe</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2833.4230248905155!2d20.490158215752803!3d44.75178678871542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7118782fc5d5%3A0x965219442cc78109!2z0JLQvtGY0LLQvtC00LUg0KHRgtC10L_QtSA0MjAsINCR0LXQvtCz0YDQsNC0!5e0!3m2!1ssr!2srs!4v1618252802556!5m2!1ssr!2srs" class="mape" style="border:0;" loading="lazy"></iframe>
+            </div>
+        </div>
+      </div>
+      <footer>
+            <ul>
+                <li><a href="index.html" class="fut-link">Početna</a></li>
+                <li><a href="filmovi.html" class="fut-link">Filmovi</a></li>
+                <li><a href="mx4d.html" class="fut-link">MX4D</a></li>
+                <li><a href="galerija.html" class="fut-link">Galerija</a></li>
+                <li><a href="kontakt.html" class="fut-link">Kontakt</a></li>
+            </ul>
+      </footer>     
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+          var brojRegEx= /([0-9])/;
+          var emailRegEx = /[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+/;
+          var slovaRegEx= /([a-zA-Z])/;
+          $("#ime").change(function(){
+            if(!$("#ime").val()){
+              $("#imeUnos").html("Unesite ime!");
+            }
+            else if($("#ime").val().match(brojRegEx)){
+              $("#imeUnos").html("Ime ne sme sadržati brojeve!");
+            }
+            else{
+              $("#imeUnos").html("");
+            }
+          });
+          $("#prezime").change(function(){
+            if(!$("#prezime").val()){
+              $("#prezimeUnos").html("Unesite prezime!");
+            }
+            else if($("#prezime").val().match(brojRegEx)){
+              $("#prezimeUnos").html("Prezime ne sme sadržati brojeve!");
+            }
+            else{
+              $("#prezimeUnos").html("");
+            }
+          });
+          $("#emailAdresa").change(function(){
+            if(!$("#emailAdresa").val()){
+              $("#emailUnos").html("Unesite Email adresu!");
+            }
+            else if(!$("#emailAdresa").val().match(emailRegEx)){
+              $("#emailUnos").html("Unesite ispravnu Email adresu!");
+            }
+            else{
+              $("#emailUnos").html("");
+            }
+          });
+          $("#brojTelefona").change(function(){
+            if(!$("#brojTelefona").val()){
+              $("#telUnos").html("Unesite broj telefona!");
+            }
+            else if($("#brojTelefona").val().match(slovaRegEx)){
+              $("#telUnos").html("Broj telefona ne sme sadržati slova!");
+            }
+            else{
+              $("#telUnos").html("");
+            }
+          });
+          $("#posaljiDugme").click(function(e){
+            e.preventDefault();
+            if($("#ime").val() && !$("#ime").val().match(brojRegEx) && $("#prezime").val() && !$("#prezime").val().match(brojRegEx) && $("#emailAdresa").val() && $("#emailAdresa").val().match(emailRegEx) && $("#brojTelefona").val() && !$("#brojTelefona").val().match(slovaRegEx)){
+              alert("Vaši podaci su uspešno poslati!");
+              $("#ime").val("");
+              $("#prezime").val("");
+              $("#emailAdresa").val("");
+              $("#brojTelefona").val("");
+              $("#imeUnos").html("");
+              $("#prezimeUnos").html("");
+              $("#emailUnos").html("");
+              $("#telUnos").html("");
+            }
+            else if(!$("#ime").val() && !$("#prezime").val() && !$("#emailAdresa").val() && !$("#brojTelefona").val()){
+              $("#imeUnos").html("Unesite ime!");
+              $("#prezimeUnos").html("Unesite prezime!");
+              $("#emailUnos").html("Unesite Email adresu!");
+              $("#telUnos").html("Unesite broj telefona!");
+            }
+            else if(!$("#ime").val()){
+              $("#imeUnos").html("Unesite ime!");
+            }
+            else if(!$("#prezime").val()){
+              $("#prezimeUnos").html("Unesite prezime!");
+            }
+            else if(!$("#emailAdresa").val()){
+              $("#emailUnos").html("Unesite Email adresu!");
+            }
+            else if(!$("#brojTelefona").val()){
+              $("#telUnos").html("Unesite broj telefona!");
+            }
+          });
+      </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/ikona.png" type="image/icon type">
+    <title>Početna</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">A&M kino</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+            <span id="burgerMeni"><i class="fas fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link aktivno" href="index.html">Početna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="filmovi.html">Filmovi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mx4d.html">MX4D</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galerija.html">Galerija</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Budite u toku!
+            </span>
+            <ul class="navbar-nav justify-content-end mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="https://facebook.com" target="_blank"><i class="fab fa-2x fa-facebook-square"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="alert alert-dark alert-dismissible fade show text-light" id="popup" role="alert">
+        <strong>Kratka anketa!</strong>
+        <label for="anketa" class="form-label">Koja je verovatnoća da biste nas preporučili prijatelju?</label>
+        <select id="anketa" class="form-select">
+            <option>Vrlo verovatno</option>
+            <option>Verovatno</option>
+            <option>Ne bih</option>
+            <option>Već jesam</option>
+        </select>
+        <button id="dugme" class="dugme mt-1">Pošalji</button>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      </div> 
+      <div class="container">
+          <div class="row mt-5">
+            <div id="carouselExampleCaptions" class="carousel slide mx-auto" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/baner0.jpg" class="d-block w-100 karuselSlika" alt="filmovi slika">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/baner1.png" class="d-block w-100 karuselSlika" alt="reklama slika">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/baner2.jpg" class="d-block w-100 karuselSlika" alt="kontakt slika">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/baner3.jpg" class="d-block w-100 karuselSlika" alt="kontakt slika">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-xs-12 col-md-4">
+                <div class="card mx-auto karticePocetna mt-3">
+                    <div class="card-header">
+                        <strong class="text-warning">Lokacije:</strong>
+                    </div> 
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Stadion Shopping Center</strong>, Zaplanjska 32</li>
+                        <li class="list-group-item"><strong>Tc Piramida</strong>, Gandijeva Blok 44</li>
+                        <li class="list-group-item">Vojvode Stepe 420</li>
+                      </ul>                   
+                  </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="card mx-auto karticePocetna mt-3">
+                      <ul class="list-group list-group-flush">
+                        <div class="card-header">
+                            <strong class="text-warning">Radno vreme:</strong>
+                        </div>  
+                        <li class="list-group-item">Utorak: <strong>neradan dan</strong></li>
+                        <li class="list-group-item">Ponedeljak/sreda/četvrtak/petak: <strong>12:00 – 23:30</strong></li>
+                        <li class="list-group-item">Subota/nedelja: <strong>11:00 – 23:30</strong></li>
+                      </ul>                  
+                  </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="card mx-auto karticePocetna mt-3">
+                    <div class="card-header">
+                        <strong class="text-warning">Filmovi nedelje:</strong>
+                    </div>  
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Posednik</strong> (Possessor)</li>
+                        <li class="list-group-item"><strong>Stela</strong> (Stela)</li>
+                        <li class="list-group-item"><strong>Duša</strong> (Soul)</li>
+                      </ul>                
+                  </div>
+            </div>
+          </div>
+            <div class="card text-center karticeMreze mt-5">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Pratite nas na društvenim mrežama</h5>
+                  <p class="card-text">Tamo možete naći popuste, nagradne igre, i biti u toku sa svim predstojećim dešavanjima.</p>
+                </div>
+              </div>
+              <h2 class="text-light naslov mt-3">Sponzori</h2><hr class="bg-light">
+          <div class="row mb-5 mx-auto">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mt-3">
+                <a target="_blank" href="https://sholye39.000webhostapp.com"><img src="images/sholye39.JPG" alt="sholye39" class="sponzori"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mt-3">
+                <a target="_blank" href="https://sudoku.com"><img src="images/sudoku.png" alt="sholye39" class="sponzori"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mt-3">
+                <a target="_blank" href="https://gfuel.com/products/xqc-the-juice-tub"><img src="images/xqc.jpg" alt="sholye39" class="sponzori"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mt-3">
+                <a target="_blank" href="https://tunein.com/radio/We-Rock-FM-s294944/"><img src="images/vrock.png" alt="sholye39" class="sponzori"></a>
+            </div>
+          </div>
+      </div>
+      <footer>
+            <ul>
+                <li><a href="index.html" class="fut-link">Početna</a></li>
+                <li><a href="filmovi.html" class="fut-link">Filmovi</a></li>
+                <li><a href="mx4d.html" class="fut-link">MX4D</a></li>
+                <li><a href="galerija.html" class="fut-link">Galerija</a></li>
+                <li><a href="kontakt.html" class="fut-link">Kontakt</a></li>
+            </ul>
+      </footer>     
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+          $("#dugme").click(function(){
+            $("#popup").hide();
+            alert("Hvala Vam na utrošenom vremenu!");
+          });
+      </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

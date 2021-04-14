@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/ikona.png" type="image/icon type">
+    <title>Galerija</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">A&M kino</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+            <span id="burgerMeni"><i class="fas fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Početna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="filmovi.html">Filmovi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mx4d.html">MX4D</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link aktivno" href="galerija.html">Galerija</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Budite u toku!
+            </span>
+            <ul class="navbar-nav justify-content-end mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="https://facebook.com" target="_blank"><i class="fab fa-2x fa-facebook-square"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <h2 class="text-light naslov mt-5">Stadion Shopping Center</h2><hr class="bg-light">
+        <div class="row">
+            <div class="col-xs-12 col-md-4 mx-auto mt-3">
+                <img src="images/ssc1.jpg" class="img-fluid galerija" alt="">
+            </div>
+            <div class="col-xs-12 col-md-4 mx-auto mt-3">
+                <img src="images/ssc2.jpg" class="img-fluid galerija" alt="">
+            </div>
+            <div class="col-xs-12 col-md-4 mx-auto mt-3">
+                <img src="images/ssc3.jpg" class="img-fluid galerija" alt="">
+            </div>
+        </div>
+        <h2 class="text-light naslov mt-5">TC Piramida</h2><hr class="bg-light">
+        <div class="row">
+            <div class="col-xs-12 col-md-4 mx-auto mt-3">
+                <img src="images/pir1.jpg" class="img-fluid galerija" alt="">
+            </div>
+            <div class="col-xs-12 col-md-4 mx-auto mt-3">
+                <img src="images/pir2.jpeg" class="img-fluid galerija" alt="">
+            </div>
+            <div class="col-xs-12 col-md-4 mx-auto mt-3">
+                <img src="images/pir3.jpg" class="img-fluid galerija" alt="">
+            </div>
+        </div>
+        <h2 class="text-light naslov mt-5">Ul. Vojvode Stepe</h2><hr class="bg-light">
+        <div class="row mb-5">
+            <div class="col-xs-12 col-md-4 mx-auto mt-3">
+                <img src="images/voj1.jpg" class="img-fluid galerija" alt="">
+            </div>
+            <div class="col-xs-12 col-md-4 mx-auto mt-3">
+                <img src="images/voj2.jpg" class="img-fluid galerija" alt="">
+            </div>
+            <div class="col-xs-12 col-md-4 mx-auto mt-3">
+                <span><img src="images/voj3.jpeg" class="img-fluid galerija" alt=""></span>                
+            </div>
+        </div>
+        <div id="dodajDugme" class="sakrij">
+          <button type="button" id="dugmeZatvori" class="dugme">Zatvori</button>
+        </div>
+        <div class="prozor">
+        </div>
+      </div>
+      <footer>
+            <ul>
+                <li><a href="index.html" class="fut-link">Početna</a></li>
+                <li><a href="filmovi.html" class="fut-link">Filmovi</a></li>
+                <li><a href="mx4d.html" class="fut-link">MX4D</a></li>
+                <li><a href="galerija.html" class="fut-link">Galerija</a></li>
+                <li><a href="kontakt.html" class="fut-link">Kontakt</a></li>
+            </ul>
+      </footer>     
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+          $(".galerija").click(function(){
+            var img = $('<img>', {src: this.src});
+            $("#dodajDugme").toggleClass("sakrij");
+            $(".prozor").html(img).append($("#dodajDugme")).fadeIn();         
+          });
+          $("#dugmeZatvori").click(function(){
+            $("#dodajDugme").toggleClass("sakrij");
+            $(".prozor").fadeOut();
+            $(".container").append($("#dodajDugme"));
+          });   
+      </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
