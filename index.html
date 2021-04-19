@@ -65,7 +65,7 @@
             <option>Ne bih</option>
             <option>Već jesam</option>
         </select>
-        <button id="dugme" class="dugme mt-1">Pošalji</button>
+        <button id="dugme" class="dugme mt-1" data-bs-target="#modalniProzor" data-bs-toggle="modal">Pošalji</button>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
       </div> 
       <div class="container">
@@ -167,6 +167,22 @@
                 <a target="_blank" href="https://tunein.com/radio/We-Rock-FM-s294944/"><img src="images/vrock.png" alt="sholye39" class="sponzori"></a>
             </div>
           </div>
+          <div class="modal fade" role="dialog" id="modalniProzor">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Hvala Vam na utrošenom vremenu!</h4>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Uspešno poslati podaci</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="dugme" data-bs-dismiss="modal" data-bs-target="#modalniProzor">Zatvori</button>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
       <footer>
             <ul>
@@ -179,9 +195,8 @@
       </footer>     
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script>
-          $("#dugme").click(function(){
+           $("#dugme").click(function(){
             $("#popup").fadeOut();
-            alert("Hvala Vam na utrošenom vremenu!");
           });
       </script>
 
