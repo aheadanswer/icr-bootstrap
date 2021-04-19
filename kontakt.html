@@ -184,6 +184,24 @@
           });
           $("#posaljiDugme").click(function(e){
             e.preventDefault();
+            if(!$("#ime").val()){
+              $("#imeUnos").html("Unesite ime!");
+            }
+            if(!$("#prezime").val()){
+              $("#prezimeUnos").html("Unesite prezime!");
+            }
+            if(!$("#emailAdresa").val()){
+              $("#emailUnos").html("Unesite Email adresu!");
+            }
+            if(!$("#brojTelefona").val()){
+              $("#telUnos").html("Unesite broj telefona!");
+            }
+            if(!$("#ime").val() && !$("#prezime").val() && !$("#emailAdresa").val() && !$("#brojTelefona").val()){
+              $("#imeUnos").html("Unesite ime!");
+              $("#prezimeUnos").html("Unesite prezime!");
+              $("#emailUnos").html("Unesite Email adresu!");
+              $("#telUnos").html("Unesite broj telefona!");
+            }
             if($("#ime").val() && !$("#ime").val().match(brojRegEx) && $("#prezime").val() && !$("#prezime").val().match(brojRegEx) && $("#emailAdresa").val() && $("#emailAdresa").val().match(emailRegEx) && $("#brojTelefona").val() && !$("#brojTelefona").val().match(slovaRegEx)){
               alert("Vaši podaci su uspešno poslati!");
               $("#ime").val("");
@@ -194,24 +212,6 @@
               $("#prezimeUnos").html("");
               $("#emailUnos").html("");
               $("#telUnos").html("");
-            }
-            else if(!$("#ime").val() && !$("#prezime").val() && !$("#emailAdresa").val() && !$("#brojTelefona").val()){
-              $("#imeUnos").html("Unesite ime!");
-              $("#prezimeUnos").html("Unesite prezime!");
-              $("#emailUnos").html("Unesite Email adresu!");
-              $("#telUnos").html("Unesite broj telefona!");
-            }
-            else if(!$("#ime").val()){
-              $("#imeUnos").html("Unesite ime!");
-            }
-            else if(!$("#prezime").val()){
-              $("#prezimeUnos").html("Unesite prezime!");
-            }
-            else if(!$("#emailAdresa").val()){
-              $("#emailUnos").html("Unesite Email adresu!");
-            }
-            else if(!$("#brojTelefona").val()){
-              $("#telUnos").html("Unesite broj telefona!");
             }
           });
       </script>
