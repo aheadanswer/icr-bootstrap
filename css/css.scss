@@ -111,6 +111,12 @@ body{
     z-index: 3;
     background: $bojaKartice;
 }
+.modal-content{
+    background: $bojaKartice;
+}
+.modal-backdrop{
+    background: transparent;
+}
 .sponzori{
     width: 100%;
     height: auto;
